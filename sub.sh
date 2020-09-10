@@ -21,8 +21,7 @@ menu(){
 printf "
 $c Pilih :
 $y[1]$c Buat Fake Deface
-$y[2]$f Notify di Defacer.id
-$y[3]$p Exit
+$y[2]$p Exit
 
 "
 }
@@ -33,14 +32,14 @@ read -p "=> " pa
 if [ $pa = 1 ]||[ $pa = satu ];
 then
 read -p "Nama web ?=> http://" domain
-read -p "Subdomainya (ex: taniacans) ?=> " subdo
+read -p "Subdomainya (ex: LittleBoy Ganss:3) ?=> " subdo
 read -p "Jumlahnya? (1-9999) ?=> " jumlah
 read -p "filenya (tod.txt) ?=> " output
 count=1
 while [ $count -le $jumlah ]
 do
 printf "http://$subdo$RANDOM.$domain\n" >> $output
-echo "[$count] Proses... sabar ya --> $output"
+echo "[$count] Prosses Gan :v Tnggu ae --> $output"
 sleep 0;
 (( count++ ))
 done
