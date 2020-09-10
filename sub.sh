@@ -12,8 +12,8 @@ y='\e[1;33m' #yellow
 banner(){
 clear
 echo    ❛ ━━━━━･━━━━━━･━━━━━━･❪ ❁ ❫ ･━━━━━━ ━━━━━･━━━━━━･❜
-  echo   Author: ./LittleBoy
- echo    WA   :  +1 (669) 245-7368
+  echo   Author:LittleBoy
+ echo    WA   :  Gadaa
  echo    ❛ ━━━━━･━━━━━━･━━━━━━･❪ ❁ ❫ ･━━━━━━ ━━━━━･━━━━━━･❜
 
 }
