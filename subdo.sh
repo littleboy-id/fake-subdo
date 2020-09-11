@@ -33,11 +33,11 @@ then
 read -p "Nama Website Lu=> http://" domain
 read -p "Subdomain (ex: littleboy)=> " subdo
 read -p "Jumlah => " jumlah
-read -p "file (ex: list.txt) => " output
+read -p "File (ex: list.txt) => " output
 count=1
 while [ $count -le $jumlah ]
 do
-printf "$ghttp://$subdo$RANDOM.$domain\n" >> $output
+printf "http://$subdo$RANDOM.$domain\n" >> $output
 echo "[$count]  Prosses Ya Syng :3=> $output"
 sleep 0;
 (( count++ ))
