@@ -11,16 +11,16 @@ y='\e[1;33m' #yellow
 
 banner(){
 clear
-echo    ❛ ━━━━━･━━━━━━･━━━━━━･❪ ❁ ❫ ･━━━━━━ ━━━━━･━━━━━━･❜
-  echo   Author:./LittleBoy
- echo    ❛ ━━━━━･━━━━━━･━━━━━━･❪ ❁ ❫ ･━━━━━━ ━━━━━･━━━━━━･❜
+echo    ❛ ━━━━━･━━━━━━･━━･❪ ❁ ❫ ･━━━ ━━━━━･━━━━━━･❜
+  echo   Author: LittleBoy
+ echo    ❛ ━━━━━･━━━━━━･━･❪ ❁ ❫ ･━━━ ━━━━━･━━━━━━･❜
 
 }
 menu(){
 printf "
-$g Pilih :
+$c Pilih :
 $y[1]$c Buat Fake Deface
-$y[2]$r Exit
+$y[2]$p Exit
 
 "
 }
@@ -30,27 +30,26 @@ read -p "=> " pa
 
 if [ $pa = 1 ]||[ $pa = satu ];
 then
-read -p "Nama Website Lu=> http://" domain
-read -p "Subdomain (ex: littleboy)=> " subdo
-read -p "Jumlah => " jumlah
-read -p "File (ex: list.txt) => " output
+read -p "Nama web --> http://" domain
+read -p "Subdomainya (ex: littleboy) --> " subdo
+read -p "Jumlahnya --> " jumlah
+read -p "Nama Filenya (ex: list.txt) --> " output
 count=1
 while [ $count -le $jumlah ]
 do
 printf "http://$subdo$RANDOM.$domain\n" >> $output
-echo "[$count]  Prosses Ya Syng :3=> $output"
-sleep 0;
+echo "[$count]  Tunggu ya Sayangg:3 --> $output"
+sleep 000.1;
 (( count++ ))
 done
-echo " Udh Selesai Gann:) "
+echo "Udh Selesai Niih syng:3"
 echo
 echo
 echo
 echo " Silahkan pindah filenya"
 echo 
 echo " nih caranya :"
-echo "ketik : ls untuk melihat file"
-echo "ketik : cp (ex: cp list.txt downloads)
+echo "ketik : cp nama file /sdcard/"
 echo " kalau udah ,copas saja di defacer.id"
 echo -e $g "  (-) $output (-)"
 exit
