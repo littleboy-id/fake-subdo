@@ -37,7 +37,7 @@ read -p "file (ex: list.txt) => " output
 count=1
 while [ $count -le $jumlah ]
 do
-printf "http://$subdo$RANDOM.$domain\n" >> $output
+printf "$ghttp://$subdo$RANDOM.$domain\n" >> $output
 echo "[$count]  Prosses Ya Syng :3=> $output"
 sleep 0;
 (( count++ ))
