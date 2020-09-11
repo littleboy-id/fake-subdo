@@ -13,7 +13,7 @@ banner(){
 clear
 echo    ❛ ━━━━━･━━━━━━･━━━━━━･❪ ❁ ❫ ･━━━━━━ ━━━━━･━━━━━━･❜
   echo   Author:LittleBoy
- echo    WA   :  Gadaa
+ echo    WA   :  meninggalkanjejak
  echo    ❛ ━━━━━･━━━━━━･━━━━━━･❪ ❁ ❫ ･━━━━━━ ━━━━━･━━━━━━･❜
 
 }
@@ -32,25 +32,25 @@ read -p "=> " pa
 if [ $pa = 1 ]||[ $pa = satu ];
 then
 read -p "Nama web ?=> http://" domain
-read -p "Subdomainya (ex: LittleBoy Ganss:3) ?=> " subdo
+read -p "Subdomainya (ex: little) ?=> " subdo
 read -p "Jumlahnya? (1-9999) ?=> " jumlah
-read -p "filenya (tod.txt) ?=> " output
+read -p "filenya (tansmirror.txt) ?=> " output
 count=1
 while [ $count -le $jumlah ]
 do
 printf "http://$subdo$RANDOM.$domain\n" >> $output
-echo "[$count] Prosses Gan :v Tnggu ae --> $output"
-sleep 0;
+echo "[$count]  Lagi  di  Proses  beb=> $output"
+sleep 000.0;
 (( count++ ))
 done
-echo "Horeee Selesai!"
+echo "Udh Selesai Gan, Push ae dah wkwk"
 echo
 echo
 echo
 echo " Silahkan pindah filenya"
 echo 
 echo " nih caranya :"
-echo "ketik ls"
+echo "ketik : cp nama file /sdcard/"
 echo " kalau udah ,copas saja di defacer.id"
 echo -e $g "  (-) $output (-)"
 exit
